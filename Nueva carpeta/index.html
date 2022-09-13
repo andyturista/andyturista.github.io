@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>AndyTurista</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="shortcut icon" href="avion.jpg"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+
+
+    <!--Header-->    
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">✈AndyTurista</label>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a target="_blank" href="pag1.html">Estadísticas</a></li>
+        <li><a target="_blank" href="pag2.html">Turismo</a></li>
+        <li><a target="_blank" href="pag3.html">Arquitectura</a></li>
+        <li><a target="_blank" href="form.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <section></section>
+
+    <!--Header-->
+  <body style="background-color: #101010;">
+    <!--Titulo-->
+
+<div id="title" class='title'><h1 style="text-transform:uppercase">La ciudad de Montevideo como destino</h1></div>
+
+    <!--Titulo-->
+
+   <!--Slider-->
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="mtv0.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="mtv1.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="mtv2.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides fade">
+    <div class="numbertext"></div>
+    <img src="mtv3.jpg" style="width:100%">
+  </div>
+</div>
+
+
+
+
+
+    <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    let currentSlide = 1;
+
+ let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2500);
+}
+    </script>
+
+    <!--Slider-->
+
+
+   <!--Text-->
+<div style="margin: 3% 12% 3% 12%;  border:1px solid white;padding:8px;">
+
+<h1 id="texto" style="text-align:center;text-transform:uppercase;color:#7B3B45;font-size: 16px;">Razones para visitar Montevideo</h1>
+
+<p style="text-indent:30px;text-align:justify;letter-spacing:1px;color: white;">"Montevideo es una ciudad que de a ratos se olvida que es ciudad, un lugar donde el paso del tiempo se refleja en calles que dan a un inmenso río color chocolate.</p>               
+<p style="text-indent:30px;text-align:justify;letter-spacing:1px;color: white;">
+Montevideo es una ciudad tranquila, que sin gozar de los niveles de seguridad de países desarrollados se posiciona como la ciudad más segura de América Latina.</p>
+
+<p style="text-indent:30px;text-align:justify;letter-spacing:1px;color: white;">
+Montevideo es una ciudad gris aunque el cielo no esté nublado, donde la melancolía de otros tiempos se intenta escapar por las baldosas flojas de las veredas. </p>     
+
+<p style="text-indent:30px;text-align:justify;letter-spacing:1px;color: white;">
+Montevideo es la capital de Uruguay, que concentra a la mitad de la población del Uruguay.</p>
+
+<p style="text-indent:30px;text-align:justify;letter-spacing:1px;color: white;">
+Montevideo es la Ciudad Vieja, un buen lugar para encontrar una pequeña ciudad europea que sobrevive como puede a los malos vientos que vienen del río. Es también el Prado, barrio perfecto para acercar los pies a la tierra y protegerse bajo los árboles del Jardín Botánico. Es Punta Carretas, lugar ideal para ir de compras o andar en bicicleta a lo largo de la rambla. Es el Parque Rodó con su feria cada domingo y el lago de agua verde."<a href="https://www.mimontevideo.com/por-que-visitar-montevideo/">  Fuente</a> 
+</p>
+</div>
+   <!--Text-->
+
+
+
+    <!--Banner-->
+
+ <div class="banner"><img src="banner.png"></div>  
+  </body>
+     <!--Banner-->
+
+
+    <!--Footer-->
+<footer>
+      <div class="main-content">
+        <div class="left box">
+          <div class="content">
+            <div class="social">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100049333333485"><span class="fab fa-facebook-f"></span></a> 
+            </div>
+              <div class="social">
+              <a target="_blank"  href="https://instagram.com/broken_vessel_666/"><span class="fab fa-instagram"></span></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Montevideo, Uruguay</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+598 93 643 705</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">gutierrez2004n@gmail.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <center>
+          <span class="far fa-copyright"></span><span>2022</span>
+        </center>
+      </div>
+</footer>
+    <!--Footer-->
+
+
+</html>
